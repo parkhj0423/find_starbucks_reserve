@@ -1,0 +1,118 @@
+/* HEADER */
+
+.section .inner {
+
+    height: auto !important;
+    display: block !important;
+}
+
+
+.section .inner .logo {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+.section .inner .menu-group ul {
+    display: block;
+    margin: none;
+    width: 100%;
+}
+
+
+.section .inner .menu-group ul div {
+    max-width: 100%;
+    padding: 18px 0 18px 18px;
+    border-bottom: 1px solid #e5e5e5;
+
+}
+
+.section .inner .name-group {
+    display: block;
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+}
+
+
+.section .inner .toggle {
+    display: none;
+}
+
+.section .inner .toggle.on {
+    display: block;
+}
+
+.section #toggle-btn {
+    display: block;
+}
+
+
+/* info__middle */
+
+
+.info__middle .inner {
+    display: block !important;
+    text-align: center;
+}
+
+.info__middle .inner .text {
+    flex: none;
+    width: 100%;
+}
+
+.info__middle .inner .text p:nth-child(1) {
+    background: none;
+    padding-bottom: 0;
+}
+
+.info__middle .inner .cf-img {
+    margin: 0 auto;
+}
+
+
+/* BEVERAGE */
+
+.beverage .inner {
+    margin: 0 20px 0 20px !important;
+}
+
+/* VIDEO */
+
+.video-section .video {
+    width: auto;
+    margin: 0 10px 0 10px;
+}
+
+.video-section .video .text {
+    display: none;
+}
+
+/* FIND A STORE */
+
+.find-a-store-prev .inner .text {
+    display: block !important;
+    text-align: center;
+}
+
+.find-a-store-prev .inner .text p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/* FOOTER */
+
+.footer_section .inner .text {
+    display: block;
+    text-align: center;
+}
+
+.footer_section .inner .text li {
+    margin-right: 0;
+    margin-top: 20px;
+}
+
+.footer_section .inner .text li:last-child {
+    display: none;
+}

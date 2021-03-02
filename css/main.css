@@ -1,0 +1,663 @@
+/*  COMMON  */
+.body__container {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.inner {
+    max-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.not-showing {
+    display: none;
+}
+
+
+
+/* FLOAT CLEARFIX */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.float--left {
+    float: left;
+}
+
+.float--right {
+    float: right;
+}
+
+
+/* INPUT */
+.input--text {
+    height: 30px;
+    padding: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+    font-size: 16px;
+}
+
+.input--text:focus {
+    border-color: #fff;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075),
+        0 0 5px rgba(81, 167, 232, 0.5);
+}
+
+
+/* Vender Prefix ( 브라우저 업체별 접두사 ) *placeholder의 색, 투명도 변경가능 */
+.input--text::-webkit-input-placeholder {
+    color: #cacaca;
+}
+
+.input--text::-ms-input-placeholder {
+    color: #cacaca;
+}
+
+.input--text::-moz-input-placeholder {
+    color: #cacaca;
+}
+
+/* HEADER */
+
+header {
+    border-bottom: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background: #f6f5ef;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+header.section .inner {
+    height: 90px;
+    display: flex;
+    position: relative;
+}
+
+header .logo {
+    background: url("https://www.starbucks.co.kr/common/img/common/logo.png");
+    text-indent: -9999px;
+    width: 75px;
+    height: 75px;
+    margin: auto 0;
+    background-repeat: no-repeat;
+}
+
+header.logo:hover {
+    cursor: pointer;
+}
+
+header .inner .menu-group {
+    margin: auto;
+    font-size: 20px;
+    display: flex;
+}
+
+header .inner .menu-group ul {
+    display: flex;
+}
+
+header .inner .menu-group ul div {
+    margin-right: 50px;
+}
+
+header .inner .menu-group ul div a {
+    color: #3c4146;
+}
+
+header .inner .menu-group ul div a:hover {
+    font-weight: bold;
+}
+
+header .inner .name-group {
+    margin-left: 50px;
+    margin: auto 0;
+}
+
+
+header .inner .name-group h4 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+
+#toggle-btn {
+    display: none;
+    text-indent: -9999px;
+    width: 18px;
+    height: 24px;
+    top: 33px;
+    right: 20px;
+    cursor: pointer;
+    position: absolute;
+    background: url(/img/toggle-btn.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/* .info__header */
+
+.info__header {
+    margin: 130px 20px 0 20px;
+}
+
+
+
+.info .inner .title {
+    width: 100%;
+    background-image: url('https://image.istarbucks.co.kr/common/img/store/reserve_store_tit01.jpg');
+}
+
+.info__header .inner .bg-img {
+    max-width: 100%;
+    margin: 20px 0;
+    padding-top: calc(300 / 1000 *100%);
+    background-image: url('https://www.starbucks.co.kr/common/img/store/reserve_store_fimg01.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.info__header .inner .text {
+    text-align: center;
+}
+
+.info__header .inner .text h3 {
+    font-size: 18px;
+    color: #222222;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+
+.info__header .inner .text p {
+    font-size: 20px;
+    color: #b06546;
+    padding-bottom: 20px;
+    font-style: italic;
+}
+
+.info__header .inner .text p:last-child {
+    font-style: normal;
+    max-width: 980px;
+    padding-bottom: 40px;
+    font-size: 14px;
+    color: #444444;
+    line-height: 1.6;
+    margin: 0 auto;
+}
+
+/* info__middle */
+
+
+.info__middle {
+    background: url('https://www.starbucks.co.kr/common/img/store/reserve_middle_bimg01.png');
+    width: 100%;
+    position: relative;
+}
+
+.info__middle .inner {
+    padding: 30px 20px 30px 20px;
+    display: flex;
+}
+
+.info__middle .cf-img {
+    background-image: url("https://image.istarbucks.co.kr/upload/common/img/main/2020/res_bean_201216.png");
+    width: 405px;
+    height: 300px;
+    background-repeat: no-repeat;
+    margin-left: 150px;
+    background-position: right;
+}
+
+.info__middle .text {
+    flex: 1;
+    width: 560px;
+}
+
+.info__middle .text p:nth-child(1) {
+    font-size: 20px;
+    color: #222222;
+    font-weight: bold;
+    padding-bottom: 40px;
+    background: url('https://www.starbucks.co.kr/common/img/store/reserve_store_tit_bg.png') no-repeat 0 bottom;
+}
+
+.info__middle .inner .text p:nth-child(2) {
+    padding-top: 40px;
+    font-size: 20px;
+    color: #222;
+    font-weight: bold;
+}
+
+.info__middle .inner .text p:nth-child(3) {
+    color: #b06546;
+    display: block;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: normal;
+    margin: 15px 0 10px;
+    line-height: 1.8;
+}
+
+.info__middle .inner .text p:nth-child(4) {
+    font-size: 14px;
+    color: #666;
+    font-weight: normal;
+    line-height: 1.6;
+    word-break: keep-all;
+}
+
+
+
+/* SYSTEM */
+
+
+.system .inner {
+    display: block;
+    padding: 0 20px 0 20px;
+}
+
+.system .system-section1 {
+    padding: 40px 0;
+}
+
+.system .system-section1 p {
+    font-size: 18px;
+    color: #222222;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.system .system-section1 .img_medium {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.system .system-section1 .img_small {
+    display: none;
+}
+
+.system .system-section2 {
+    padding: 40px 0;
+    display: flex;
+}
+
+.system .system-section2 img {
+    width: 350px;
+    height: 260px;
+    margin-right: 50px;
+}
+
+
+.system .system-section2 .text p:nth-child(1) {
+    padding-top: 20px;
+    font-size: 18px;
+    color: #222;
+    font-weight: bold;
+}
+
+.system .system-section2 .text p:nth-child(2) {
+    color: #b06546;
+    display: block;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: normal;
+    margin: 15px 0 10px;
+    line-height: 1.8;
+}
+
+.system .system-section2 .text p:nth-child(3) {
+    font-size: 14px;
+    color: #666;
+    font-weight: normal;
+    line-height: 1.6;
+    word-break: keep-all;
+}
+
+
+
+.system .system-section3 {
+    padding: 40px 0;
+    display: flex;
+}
+
+
+.system .system-section3 .text p:nth-child(1) {
+    font-size: 18px;
+    color: #222;
+    font-weight: bold;
+}
+
+.system .system-section3 .text p:nth-child(2) {
+    color: #b06546;
+    display: block;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: normal;
+    margin: 15px 0 10px;
+    line-height: 1.8;
+}
+
+.system .system-section3 .text p:nth-child(3) {
+    font-size: 14px;
+    color: #666;
+    font-weight: normal;
+    line-height: 1.6;
+    word-break: keep-all;
+}
+
+.system .system-section3 img {
+    width: 350px;
+    height: 260px;
+    margin-left: 50px;
+}
+
+
+
+/* BEVERAGE */
+
+
+.beverage {
+    background: url('https://www.starbucks.co.kr/common/img/store/reserve_beverage_bg.png');
+    width: 100%;
+
+}
+
+.beverage .inner {
+    display: block;
+    text-align: center;
+}
+
+
+.beverage .inner .text img {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.beverage .inner .text p {
+    color: #af6445;
+    font-size: 22px;
+    line-height: 1;
+}
+
+.beverage .inner .text p:last-child {
+    color: #ddd;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 25px 0;
+    font-weight: 400;
+}
+
+.beverage .inner {
+    padding-bottom: 30px;
+}
+
+.beverage .inner .scroll-container {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    overflow: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.beverage .inner .scroll-container .coffee-img {
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.beverage .inner .scroll-container img {
+    width: 258px;
+    height: 268px;
+    padding-bottom: 20px;
+
+}
+
+.beverage .inner .scroll-container p {
+    font-weight: bold;
+    color: #ddd;
+    font-size: 15px;
+}
+
+/* VIDEO */
+
+.video-section {
+    background: #e5e5e5;
+    padding: 30px 0;
+}
+
+.video {
+    width: 650px;
+    /* 상하 50px 좌우 auto로 설정하여 가운데정렬 */
+    margin: 50px auto 50px auto;
+}
+
+.video .text {
+    text-align: center;
+}
+
+.video .text h1 {
+    font-size: 35px;
+    color: #222;
+    font-weight: bold;
+    margin: 100px 0;
+}
+
+.video .video-ratio {
+    height: 0;
+    padding-top: 56.25%;
+    position: relative;
+}
+
+.video .video-ratio iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* FIND A STORE */
+
+
+.find-a-store-prev {
+    background: #000000;
+}
+
+.find-a-store-prev .inner .text {
+    display: flex;
+    align-items: center;
+}
+
+
+.find-a-store-prev .inner .text p {
+    color: #b06546;
+    font-family: 'Arial';
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.find-a-store-prev .inner .text p:last-child {
+    font-size: 14px;
+    color: #b2b2b2;
+    line-height: 77px;
+    height: 77px;
+    padding-left: 15px;
+}
+
+.find-a-store {
+    background-color: #e5e5e5;
+}
+
+.find-a-store .inner {
+    margin: 0 auto;
+}
+
+#map {
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* close-store */
+
+.close-store .inner .sort-store {
+    width: 60%;
+    height: 200px;
+    margin: 30px auto;
+
+    background: #fff;
+    text-align: center;
+}
+
+.close-store .inner .sort-store p {
+    padding: 20px 0;
+    font-size: 18px;
+    color: #222;
+    font-weight: bold;
+}
+
+
+
+
+
+/* footer */
+
+footer {
+    background: #2C2A29;
+    width: 100%;
+}
+
+
+footer .inner {
+    width: 100%;
+    margin: 0 auto;
+}
+
+footer .inner ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .inner .text li {
+    font-size: 15px;
+    color: #e5e5e5;
+    margin-right: 40px;
+}
+
+
+/* POP_UP */
+
+
+.wrap {
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    width: 288px;
+    height: 160px;
+    margin-left: -144px;
+    text-align: left;
+    overflow: hidden;
+    font-size: 12px;
+    font-family: 'Malgun Gothic', dotum, '돋움', sans-serif;
+    line-height: 1.5;
+}
+
+.wrap .info {
+    width: 286px;
+    height: 155px;
+    border-radius: 5px;
+    border-bottom: 2px solid #ccc;
+    border-right: 1px solid #ccc;
+    overflow: hidden;
+    background: #fff;
+}
+
+
+.info .title {
+    background: #8c8279;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.info .body {
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+.info .desc {
+    position: relative;
+    text-align: center;
+    height: 75px;
+    margin-top: 5px;
+}
+
+.desc .ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.info .img {
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+.info .img img {
+    margin-right: 15px;
+}
+
+.info .link {
+    background: #222;
+    border-radius: 3px;
+    bottom: 0;
+    color: #fff;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    height: 30px;
+    left: 50%;
+    line-height: 30px;
+    margin-left: -45px;
+    position: absolute;
+    text-align: center;
+    width: 90px;
+}
